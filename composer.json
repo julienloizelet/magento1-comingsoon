@@ -1,0 +1,25 @@
+{
+    "name": "okaeli/magento1-comingsoon",
+    "description": "Okaeli_ComingSoon extension for Magento 1",
+    "type": "magento-module",
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Julien Loizelet",
+            "email": "julienloizelet@okaeli.com"
+        }
+    ],
+    "keywords": [
+        "magento",
+        "magento1",
+        "extension",
+        "module",
+        "redirect"
+    ],
+    "require": {
+        "php": " >= 5.3"
+    },
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "Makes it possible to manage this package as a dependency"
+    }
+}

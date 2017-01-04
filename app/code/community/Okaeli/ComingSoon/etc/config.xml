@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Okaeli_ComingSoon  Extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the GNU GENERAL PUBLIC LICENSE Version 3
+ * that is bundled with this package in the file LICENSE
+ *
+ * @category Okaeli
+ * @package Okaeli_ComingSoon
+ * @copyright  Copyright (c)  2017 Julien Loizelet 
+ * @author     Julien Loizelet <julienloizelet@okaeli.com>
+ * @license    GNU GENERAL PUBLIC LICENSE Version 3
+ * 
+ */
+ 
+ /**
+ *
+ * @category Okaeli
+ * @package  Okaeli_ComingSoon
+ * @module   ComingSoon
+ * @author   Julien Loizelet <julienloizelet@okaeli.com>
+ *
+ */
+ -->
+<config>
+    <modules>
+        <Okaeli_ComingSoon>
+            <version>0.0.1</version>
+        </Okaeli_ComingSoon>
+    </modules>
+    <global>
+        <blocks>
+            <okaeli_comingsoon>
+                <class>Okaeli_ComingSoon_Block</class>
+            </okaeli_comingsoon>
+        </blocks>
+        <models>
+            <okaeli_comingsoon>
+                <class>Okaeli_ComingSoon_Model</class>
+            </okaeli_comingsoon>
+        </models>
+        <helpers>
+            <okaeli_comingsoon>
+                <class>Okaeli_ComingSoon_Helper</class>
+            </okaeli_comingsoon>
+        </helpers>
+    </global>
+    <frontend>
+        <translate>
+            <modules>
+                <Okaeli_ComingSoon>
+                    <files>
+                        <default>Okaeli_ComingSoon.csv</default>
+                    </files>
+                </Okaeli_ComingSoon>
+            </modules>
+        </translate>
+        <layout>
+            <updates>
+                <okaeli_comingsoon>
+                    <file>okaeli/comingsoon.xml</file>
+                </okaeli_comingsoon>
+            </updates>
+        </layout>
+        <routers>
+            <okaeli_comingsoon>
+                <use>standard</use>
+                <args>
+                    <module>Okaeli_ComingSoon</module>
+                    <frontName>comingsoon</frontName>
+                </args>
+            </okaeli_comingsoon>
+        </routers>
+        <events>
+            <controller_front_send_response_before>
+                <observers>
+                    <okaeli_comingsoon_noroute>
+                        <type>model</type>
+                        <class>okaeli_comingsoon/observer</class>
+                        <method>redirectToComingSoon</method>
+                    </okaeli_comingsoon_noroute>
+                </observers>
+            </controller_front_send_response_before>
+        </events>
+    </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Okaeli_ComingSoon>
+                    <files>
+                        <default>Okaeli_ComingSoon.csv</default>
+                    </files>
+                </Okaeli_ComingSoon>
+            </modules>
+        </translate>
+    </adminhtml>
+    <default>
+        <okaeli_comingsoon>
+            <settings>
+                <unredirected_urls><![CDATA[/index.php/comingsoon]]></unredirected_urls>
+            </settings>
+        </okaeli_comingsoon>
+    </default>
+</config>

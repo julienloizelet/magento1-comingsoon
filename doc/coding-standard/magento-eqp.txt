@@ -1,0 +1,27 @@
+
+FILE: ...1-comingsoon/app/code/community/Okaeli/ComingSoon/Block/View.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 26 | WARNING | Empty CLASS statement detected
+----------------------------------------------------------------------
+
+
+FILE: ...omingsoon/app/code/community/Okaeli/ComingSoon/Helper/Config.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 2 WARNINGS AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 138 | WARNING | The use of function print_r() is discouraged
+ 138 | WARNING | The use of function print_r() is discouraged
+----------------------------------------------------------------------
+
+
+FILE: ...-comingsoon/app/code/community/Okaeli/ComingSoon/Helper/Data.php
+----------------------------------------------------------------------
+FOUND 0 ERRORS AND 1 WARNING AFFECTING 1 LINE
+----------------------------------------------------------------------
+ 26 | WARNING | Empty CLASS statement detected
+----------------------------------------------------------------------
+
+Time: 252ms; Memory: 6.25Mb
+
